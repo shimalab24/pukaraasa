@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="沖縄県今帰仁村今泊、1日1組限定の古民家の宿 ぷからーさ。ヌチヂャー工法の一棟貸しで、集落に住むような1泊を。">
+  <title>古民家の宿 ぷからーさ｜今帰仁村の1日1組限定一棟貸し</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F7F4EE;
+      --bg-alt: #F0EBE1;
+      --dark: #2C1810;
+      --accent: #B5452C;
+      --green: #4A6641;
+      --sand: #C5AE94;
+      --muted: #7A7068;
+      --white: #FFFFFF;
+      --content: 1160px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 40px;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 40px;
+      color: var(--dark);
+      background: var(--bg);
+      font-family: "Noto Serif JP", serif;
+      font-size: 16px;
+      line-height: 1.85;
+      word-break: normal;
+      overflow-wrap: normal;
+      line-break: strict;
+      text-wrap: pretty;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    blockquote {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    .kicker {
+      font-feature-settings: "palt" 1;
+      overflow-wrap: normal;
+    }
+
+    h1,
+    h2 {
+      font-family: "Lora", "Noto Serif JP", serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      line-height: 1.15;
+      letter-spacing: 0.02em;
+    }
+
+    h2 {
+      margin-bottom: 32px;
+      font-size: clamp(1.9rem, 3.8vw, 2.8rem);
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+    }
+
+    h3 {
+      margin-bottom: 16px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .demo-banner {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      display: grid;
+      place-items: center;
+      height: 40px;
+      padding: 0 16px;
+      color: var(--white);
+      background: #152033;
+      font-family: "Archivo", sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .section {
+      position: relative;
+      padding: clamp(84px, 10vw, 144px) 24px;
+    }
+
+    .section-inner {
+      position: relative;
+      z-index: 1;
+      width: min(100%, var(--content));
+      margin-inline: auto;
+    }
+
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 22px;
+      color: var(--accent);
+      font-family: "Archivo", sans-serif;
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .kicker::before {
+      width: 38px;
+      height: 1px;
+      content: "";
+      background: currentColor;
+    }
+
+    .section-heading {
+      margin-bottom: clamp(42px, 6vw, 72px);
+    }
+
+    .section-heading.center {
+      text-align: center;
+    }
+
+    .section-heading.center .kicker {
+      justify-content: center;
+    }
+
+    .section-heading.center .kicker::after {
+      width: 38px;
+      height: 1px;
+      content: "";
+      background: currentColor;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 13px 28px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      color: var(--white);
+      background: var(--accent);
+      font-family: "Noto Serif JP", serif;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background: #913521;
+      transform: translateY(-2px);
+    }
+
+    .button.secondary {
+      border-color: var(--dark);
+      color: var(--dark);
+      background: transparent;
+    }
+
+    .button.secondary:hover {
+      color: var(--bg);
+      background: var(--dark);
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      min-height: max(600px, calc(100svh - 40px));
+      place-items: center;
+      padding: 72px 24px;
+      isolation: isolate;
+      color: var(--white);
+      background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.45) 100%),
+        url("photos/exterior/sky_022.jpg") center / cover no-repeat;
+    }
+
+    .hero::after {
+      position: absolute;
+      right: -9vw;
+      bottom: -18vw;
+      z-index: -1;
+      width: min(48vw, 620px);
+      aspect-ratio: 1;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero-content {
+      width: min(100%, 900px);
+      text-align: center;
+      animation: hero-in 0.8s ease-out both;
+    }
+
+    .hero .kicker {
+      justify-content: center;
+      margin-bottom: 28px;
+      color: var(--white);
+    }
+
+    .hero .kicker::after {
+      width: 38px;
+      height: 1px;
+      content: "";
+      background: currentColor;
+    }
+
+    .hero-sub {
+      max-width: 42em;
+      margin: 0 auto 36px;
+      font-size: clamp(0.96rem, 1.5vw, 1.1rem);
+      line-height: 1.9;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      right: 28px;
+      bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "Archivo", sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+    }
+
+    .hero-scroll::after {
+      width: 1px;
+      height: 52px;
+      content: "";
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    @keyframes hero-in {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .about {
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .about::before {
+      position: absolute;
+      top: -160px;
+      left: -180px;
+      z-index: 0;
+      width: 520px;
+      height: 520px;
+      border-radius: 58% 42% 66% 34% / 48% 58% 42% 52%;
+      background: radial-gradient(circle at 60% 40%, rgba(181, 69, 44, 0.10), transparent 68%);
+      content: "";
+      filter: blur(34px);
+      pointer-events: none;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(340px, 0.72fr);
+      gap: clamp(48px, 8vw, 112px);
+      align-items: center;
+    }
+
+    .about-copy p {
+      max-width: 34em;
+      margin-bottom: 22px;
+    }
+
+    .about-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-image {
+      position: relative;
+      padding: 18px 0 0 18px;
+    }
+
+    .about-image::before {
+      position: absolute;
+      inset: 0 18px 18px 0;
+      z-index: -1;
+      border: 1px solid var(--sand);
+      content: "";
+    }
+
+    .about-image img {
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .features {
+      background: var(--bg-alt);
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid var(--sand);
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .feature {
+      min-width: 0;
+      padding: 48px clamp(24px, 4vw, 52px);
+      border-right: 1px solid var(--sand);
+    }
+
+    .feature:last-child {
+      border-right: 0;
+    }
+
+    .feature-number {
+      display: block;
+      margin-bottom: 38px;
+      color: var(--accent);
+      font-family: "Lora", serif;
+      font-size: 2.4rem;
+      font-style: italic;
+      line-height: 1;
+    }
+
+    .feature p {
+      margin: 0;
+      color: #51443d;
+      font-size: 0.94rem;
+    }
+
+    .experience {
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .experience::after {
+      position: absolute;
+      right: -260px;
+      bottom: -320px;
+      z-index: 0;
+      width: 720px;
+      height: 720px;
+      border: 1px solid rgba(74, 102, 65, 0.17);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr);
+      grid-template-rows: repeat(2, minmax(250px, 1fr));
+      gap: 14px;
+      min-height: 720px;
+    }
+
+    .experience-card {
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      overflow: hidden;
+      color: var(--white);
+      background: var(--dark);
+    }
+
+    .experience-card:first-child {
+      grid-row: 1 / 3;
+    }
+
+    .experience-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .experience-card:first-child img {
+      object-position: center;
+    }
+
+    .experience-card:nth-child(2) img {
+      object-position: center 38%;
+    }
+
+    .experience-card:nth-child(3) img {
+      object-position: center;
+    }
+
+    .experience-card::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.03) 58%);
+      transition: background 0.3s ease;
+    }
+
+    .experience-card:hover img {
+      transform: scale(1.025);
+    }
+
+    .experience-card:hover::after {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.10) 62%);
+    }
+
+    .experience-caption {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      padding: clamp(24px, 4vw, 42px);
+    }
+
+    .experience-caption span {
+      display: block;
+      margin-bottom: 9px;
+      font-family: "Archivo", sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .experience-caption p {
+      margin: 0;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      line-height: 1.65;
+    }
+
+    .pull-quote {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(92px, 12vw, 156px) 24px;
+      color: var(--bg);
+      background: var(--dark);
+      text-align: center;
+    }
+
+    .pull-quote::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: min(78vw, 960px);
+      aspect-ratio: 2 / 1;
+      border: 1px solid rgba(197, 174, 148, 0.2);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+    }
+
+    .pull-quote blockquote {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto 30px;
+      font-family: "Lora", "Noto Serif JP", serif;
+      font-size: clamp(1.65rem, 4vw, 2.65rem);
+      font-style: italic;
+      line-height: 1.65;
+    }
+
+    .rating {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: var(--sand);
+      font-family: "Archivo", sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .reviews {
+      background: var(--bg);
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .review-card {
+      display: flex;
+      min-width: 0;
+      min-height: 100%;
+      flex-direction: column;
+      padding: clamp(28px, 4vw, 42px);
+      border: 1px solid var(--sand);
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .review-card .stars {
+      margin-bottom: 24px;
+      color: var(--accent);
+      font-family: "Archivo", sans-serif;
+      font-size: 0.74rem;
+      letter-spacing: 0.13em;
+    }
+
+    .review-card blockquote {
+      flex: 1;
+      margin-bottom: 28px;
+      font-size: 0.94rem;
+      line-height: 2;
+    }
+
+    .review-card cite {
+      color: var(--muted);
+      font-family: "Archivo", "Noto Serif JP", sans-serif;
+      font-size: 0.72rem;
+      font-style: normal;
+      letter-spacing: 0.08em;
+    }
+
+    .booking {
+      overflow: hidden;
+      padding-bottom: clamp(118px, 13vw, 170px);
+      background: var(--bg-alt);
+    }
+
+    .booking::before {
+      position: absolute;
+      top: -180px;
+      right: -220px;
+      width: 600px;
+      height: 600px;
+      border-radius: 43% 57% 41% 59% / 57% 38% 62% 43%;
+      background: radial-gradient(circle, rgba(74, 102, 65, 0.10), transparent 66%);
+      content: "";
+      filter: blur(32px);
+      pointer-events: none;
+    }
+
+    .booking-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
+      gap: clamp(42px, 7vw, 88px);
+      align-items: start;
+    }
+
+    .map {
+      position: relative;
+      min-width: 0;
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 68%;
+      background: var(--sand);
+    }
+
+    .map iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: saturate(0.7) sepia(0.08);
+    }
+
+    .booking-info {
+      min-width: 0;
+    }
+
+    .info-list {
+      margin: 0 0 34px;
+      border-top: 1px solid var(--sand);
+    }
+
+    .info-row {
+      display: grid;
+      grid-template-columns: 9em minmax(0, 1fr);
+      gap: 20px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .info-row dt {
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+
+    .info-row dd {
+      min-width: 0;
+      margin: 0;
+      color: #51443d;
+      font-size: 0.9rem;
+    }
+
+    .nearby {
+      margin: 0 0 34px;
+      padding: 0;
+      list-style: none;
+      color: #51443d;
+      font-size: 0.9rem;
+    }
+
+    .nearby li {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 8px 0;
+    }
+
+    .nearby strong {
+      color: var(--dark);
+      font-family: "Archivo", sans-serif;
+      font-weight: 400;
+    }
+
+    .booking-actions {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+    }
+
+    .instagram-link {
+      display: inline-block;
+      margin-top: 26px;
+      color: var(--green);
+      font-family: "Archivo", sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.07em;
+      text-underline-offset: 5px;
+    }
+
+    .footer {
+      padding: 76px 24px 110px;
+      color: var(--bg);
+      background: var(--dark);
+      text-align: center;
+    }
+
+    .footer-name {
+      margin-bottom: 14px;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .footer-address,
+    .footer-instagram,
+    .footer-credit {
+      margin-bottom: 10px;
+      color: #d9cfc3;
+      font-size: 0.82rem;
+    }
+
+    .footer-instagram a {
+      text-underline-offset: 4px;
+    }
+
+    .footer-credit {
+      margin-top: 42px;
+      margin-bottom: 0;
+      font-family: "Archivo", sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .fixed-cta {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 900;
+      min-height: 52px;
+      padding-inline: 26px;
+      box-shadow: 0 10px 30px rgba(44, 24, 16, 0.22);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 900px) {
+      .about-grid,
+      .booking-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .about-image {
+        width: min(100%, 640px);
+        margin-left: auto;
+      }
+
+      .feature-list,
+      .review-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .feature {
+        border-right: 0;
+        border-bottom: 1px solid var(--sand);
+      }
+
+      .feature:last-child {
+        border-bottom: 0;
+      }
+
+      .experience-grid {
+        min-height: 620px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding-bottom: 76px;
+      }
+
+      .section {
+        padding-inline: 20px;
+      }
+
+      .demo-banner {
+        font-size: 9px;
+        letter-spacing: 0.08em;
+      }
+
+      .hero {
+        min-height: max(600px, calc(100svh - 40px));
+        padding-inline: 20px;
+        background-position: 56% center;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.35rem, 12vw, 3.4rem);
+      }
+
+      .hero h1 br {
+        display: none;
+      }
+
+      .hero-sub {
+        max-width: 21em;
+      }
+
+      .hero-scroll {
+        display: none;
+      }
+
+      .about-image {
+        padding: 12px 0 0 12px;
+      }
+
+      .feature {
+        padding: 38px 4px;
+      }
+
+      .feature-number {
+        margin-bottom: 24px;
+      }
+
+      .experience-grid {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: none;
+        min-height: auto;
+      }
+
+      .experience-card,
+      .experience-card:first-child {
+        grid-row: auto;
+        aspect-ratio: 4 / 3;
+      }
+
+      .experience-card:nth-child(2) img {
+        object-position: center 40%;
+      }
+
+      .pull-quote blockquote br {
+        display: none;
+      }
+
+      .info-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2px;
+      }
+
+      .nearby li {
+        gap: 12px;
+      }
+
+      .fixed-cta {
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        width: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-banner">Shima Lab proposal demo / 古民家の宿 ぷからーさ</div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <!-- 写真差し込み: 古民家外観 -->
+      <div class="hero-content">
+        <p class="kicker">今帰仁村 · 1日1組 · 1棟貸し</p>
+        <h1 id="hero-title">今帰仁の集落に、<br>1日だけ住む。</h1>
+        <p class="hero-sub">ヌチヂャー工法の古民家で、その家の人として過ごす1泊。</p>
+        <a class="button" href="#booking">宿を探す →</a>
+      </div>
+      <span class="hero-scroll" aria-hidden="true">Scroll</span>
+    </section>
+
+    <section class="section about" aria-labelledby="about-title">
+      <div class="section-inner about-grid">
+        <div class="about-copy reveal">
+          <p class="kicker">About</p>
+          <h2 id="about-title">ホテルでも民宿でもない。</h2>
+          <p>ヌチヂャー工法で組まれた柱、オーナーが1つずつ積んだ石垣、縁側の雨戸を開けると集落の風が通り抜ける。ここに"泊まる"より、この家に"住まわせてもらう"に近い。</p>
+          <p>1日1組。今帰仁村の今泊集落の中。ビーチは徒歩3分。庭にはヤギがいる。観光から戻るたびになぜかホッとする。この感覚は、リゾートホテルでは手に入らない。</p>
+        </div>
+        <figure class="about-image reveal">
+          <!-- 写真差し込み: 縁側と畳の室内 -->
+          <img src="photos/interior/sky_021.jpg" alt="雨戸を開け放した木造の縁側と畳の間" width="640" height="360">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section features" aria-labelledby="features-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="kicker">The House</p>
+          <h2 id="features-title">この家をつくるもの</h2>
+        </div>
+        <div class="feature-list">
+          <article class="feature reveal">
+            <span class="feature-number">01</span>
+            <h3>ヌチヂャー工法</h3>
+            <p>釘を1本も使わない。木と木を組んで建てる沖縄の伝統工法。この家の骨組みが、天井にそのまま露わになっている。（ヌチヂャー = "命（ヌチ）を繋ぐ"とも言われる）</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-number">02</span>
+            <h3>オーナー手積みの石垣</h3>
+            <p>外壁を囲む石垣はすべてオーナーの手仕事。沖縄在来石を組む技術は、今では受け継ぐ職人が少ない。</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-number">03</span>
+            <h3>縁側を開け放つ</h3>
+            <p>雨戸を開ければ集落の風がそのまま室内を抜ける。夜は蚊帳を吊って眠る。子ヤギが生まれたのは2025年10月。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" aria-labelledby="experience-title">
+      <div class="section-inner">
+        <div class="section-heading center reveal">
+          <p class="kicker">Experience</p>
+          <h2 id="experience-title">集落に流れる時間</h2>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card reveal">
+            <!-- 写真差し込み: 今帰仁村の夕日の海岸 -->
+            <img src="photos/access/ig_035.jpg" alt="夕日に染まる今帰仁村の海岸線" width="640" height="640">
+            <div class="experience-caption">
+              <span>From the house</span>
+              <p>宿から3分。今帰仁村の海岸線</p>
+            </div>
+          </article>
+          <article class="experience-card reveal">
+            <!-- 写真差し込み: 庭の島ヤギ親子 -->
+            <img src="photos/garden/ig_034.jpg" alt="庭で過ごす島ヤギの親子" width="640" height="1136">
+            <div class="experience-caption">
+              <span>In the garden</span>
+              <p>庭の島ヤギ。2025年10月、子が生まれた</p>
+            </div>
+          </article>
+          <article class="experience-card reveal">
+            <!-- 写真差し込み: 蚊帳のある木造の部屋 -->
+            <img src="photos/interior/sky_025.jpg" alt="蚊帳を吊った木造の居間" width="320" height="180">
+            <div class="experience-caption">
+              <span>Morning</span>
+              <p>蚊帳の中で目が覚める朝</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pull-quote" aria-label="宿泊者の口コミ">
+      <blockquote class="reveal">「他人に知らしたくないほど、<br>私のみ来たい秘密の場所に残したい。」</blockquote>
+      <p class="rating reveal">★★★★★ &nbsp; Google口コミ</p>
+    </section>
+
+    <section class="section reviews" aria-labelledby="reviews-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="kicker">Guest Voices</p>
+          <h2 id="reviews-title">泊まった人の言葉</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card reveal">
+            <div class="stars" aria-label="5つ星">★★★★★</div>
+            <blockquote>「木の床を裸足で歩くと心地よいし、雨戸を開け放つと風も全てが気持ちよかったです。教えてもらった通り、蚊帳を吊りその中でぐっすり眠りました。」</blockquote>
+            <cite>— Google口コミ</cite>
+          </article>
+          <article class="review-card reveal">
+            <div class="stars" aria-label="5つ星">★★★★★</div>
+            <blockquote>「テラスからは海と森が見渡せて、朝は鳥の声、夜は満点の星空。都会の喧騒を忘れて、深呼吸できる場所です。」</blockquote>
+            <cite>— Google口コミ（3泊4日）</cite>
+          </article>
+          <article class="review-card reveal">
+            <div class="stars" aria-label="5つ星">★★★★★</div>
+            <blockquote>「赤瓦の宿の柱など、人が人生を重ねてきた暖かさや思い出を見て感じて触れることができる。一度泊まったらクセになるくらい好きになる宿です。」</blockquote>
+            <cite>— Google口コミ（県内在住）</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <div class="section-inner">
+        <div class="section-heading center reveal">
+          <p class="kicker">Access &amp; Booking</p>
+          <h2 id="booking-title">今帰仁村今泊集落</h2>
+        </div>
+        <div class="booking-grid">
+          <div class="map reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4840.583201631345!2d127.92512927639672!3d26.70276946907953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e4f9d48f17f941%3A0x1b223e95567639a3!2z5Y-k5rCR5a6244Gu5a6_IOOBt-OBi-OCioODvOOBlQ!5e1!3m2!1sja!2sjp!4v1781211584889!5m2!1sja!2sjp"
+              title="古民家の宿 ぷからーさ 周辺地図"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="booking-info reveal">
+            <dl class="info-list">
+              <div class="info-row">
+                <dt>住所</dt>
+                <dd>沖縄県国頭郡今帰仁村字今泊74-1</dd>
+              </div>
+              <div class="info-row">
+                <dt>チェックイン</dt>
+                <dd>16:00〜19:00</dd>
+              </div>
+              <div class="info-row">
+                <dt>チェックアウト</dt>
+                <dd>9:00</dd>
+              </div>
+              <div class="info-row">
+                <dt>定員</dt>
+                <dd>1棟1組</dd>
+              </div>
+              <div class="info-row">
+                <dt>料金目安</dt>
+                <dd>17,380円〜（1泊2名）</dd>
+              </div>
+              <div class="info-row">
+                <dt>駐車場</dt>
+                <dd>1台（無料）</dd>
+              </div>
+            </dl>
+            <ul class="nearby" aria-label="周辺施設までの所要時間">
+              <li><span>美ら海水族館まで</span><strong>車10分</strong></li>
+              <li><span>今帰仁城跡まで</span><strong>車3分</strong></li>
+              <li><span>古宇利島まで</span><strong>車20分</strong></li>
+            </ul>
+            <div class="booking-actions">
+              <a class="button" href="https://skyticket.jp/hotel/detail/property_1532968/" target="_blank" rel="noopener noreferrer">skyticket で予約</a>
+              <a class="button secondary" href="https://travel.rakuten.co.jp/keyword/Search.do?f_query=%E3%81%B7%E3%81%8B%E3%82%89%E3%83%BC%E3%81%95" target="_blank" rel="noopener noreferrer">楽天トラベルで予約</a>
+            </div>
+            <a class="instagram-link" href="https://www.instagram.com/pukaraasa/" target="_blank" rel="noopener noreferrer">@pukaraasa / Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-name">古民家の宿 ぷからーさ</p>
+    <p class="footer-address">沖縄県国頭郡今帰仁村字今泊74-1</p>
+    <p class="footer-instagram"><a href="https://www.instagram.com/pukaraasa/" target="_blank" rel="noopener noreferrer">Instagram: @pukaraasa</a></p>
+    <p class="footer-credit">LP by shimalab</p>
+  </footer>
+
+  <a class="button fixed-cta" href="#booking">空室・予約を確認する</a>
+
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealElements.forEach((element) => observer.observe(element));
+  </script>
+</body>
+</html>
